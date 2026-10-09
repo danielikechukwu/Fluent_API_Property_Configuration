@@ -1,0 +1,6 @@
+@EF_FluentAPIPropertyConfiguration_HostAddress = http://localhost:5051
+
+GET {{EF_FluentAPIPropertyConfiguration_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
