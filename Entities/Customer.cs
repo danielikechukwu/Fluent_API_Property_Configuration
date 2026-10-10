@@ -17,6 +17,7 @@ namespace EF_FluentAPIPropertyConfiguration.Entities
         public string Email { get; set; } = null!;
 
         public string PhoneNumber { get; set; } = null!;
+
         public CustomerType? CustomerType { get; set; }
 
         public bool IsActive { get; set; } = true; 
