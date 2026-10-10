@@ -1,6 +1,11 @@
+using EF_FluentAPIPropertyConfiguration.Data;
+using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<EF_FluentAPIPropertyConfigurationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("EF_FluentAPIPropertyConfigurationConnection")));
 
 // Add services to the container.
 builder.Services.AddControllers();
